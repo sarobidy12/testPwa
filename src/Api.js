@@ -10,7 +10,7 @@ class Api {
   getAll() {
     return axios.get(API_URL + '?api-key=' + API_KEY + '&show-fields=trailText,thumbnail')
       .then(res => res.data.response && res.data.response.results)
-  }
+  }3
 }
 
 export default new Api();

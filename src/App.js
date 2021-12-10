@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Menu , Row, Col } from 'antd';
-
-import Api from './Api';
 import { NewsList } from './News'
-
 import './App.css';
 
 const { Header, Content, Footer } = Layout;
@@ -16,11 +13,6 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    Api.getAll().then(articles => {
-      this.setState({articles: articles})
-    })
-  }
 
   render() {
     return (
